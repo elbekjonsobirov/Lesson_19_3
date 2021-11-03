@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 50%;
+    animation-name: container;
+    animation-duration: 0.4s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes container {
+    from {
+        width: 400px;
+    }
+
+    to {
+        width: 0px;
+    }
+
+}
